@@ -1,0 +1,244 @@
+*{
+    margin:0 0 0 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+html{
+    scroll-behavior:smooth;
+}
+.header{
+height:50px;
+border:solid 1px transparent;
+padding:10px 80px 10px 40px;
+display: flex;
+flex-direction: row;
+max-width: auto;
+justify-content: space-between;
+font-weight: bold;
+}
+.left img{
+    width:100px;
+    height: 75px;
+    padding-left: 100px;
+    margin-right:50px;
+}
+.right {
+    padding-top:20px;
+}
+a{
+    padding-right: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    
+}
+
+a:hover{
+    color:#25EB41;
+    transition: 0.2s ease-in;
+}
+.middle{
+    border:solid 1px transparent;   
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items: center;
+    position:relative;
+    top:100px;
+    color: white; 
+    padding-bottom: 200px;
+}
+.middle .name1,.name2,.name3,.button1{
+    padding: 5px;
+}
+.middle .name1{
+    font-size:40px;
+    font-weight:bolder;    
+}
+.middle .name2,.name3{
+    font-size:20px;
+    font-weight:lighter;
+}
+.name2 span{
+    color: #25EB41;
+}
+.name3{
+    padding-bottom: 40px;
+}
+.button1{
+    border:2px solid #25EB41;
+    border-radius: 100px;
+    font-size:17px;
+    padding: 7px 30px; 
+    font-weight: bold; 
+    
+}
+.button1:hover{
+    background-color:#25EB41;
+    transition: 0.3s ease-in;
+    color: black;
+}   
+.backimg{
+background-image: url(https://1.bp.blogspot.com/-t-ey8beCtdo/YBp4gd8yOeI/AAAAAAAAMBw/_9fnMe7oYHEJIiQDENi5Nk8c_ZZdJNTnwCLcBGAsYHQ/s1916/background.jpg);
+}
+#page2{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    padding: 80px 80px 20px 80px;
+}
+.mypic{
+    width:350px;
+    height:400px;
+    margin:20px 20px;
+    padding-right:30px;
+}
+.aboutme h1{
+    padding-top:20px;
+    padding-bottom:15px;
+    font-size: 25px;
+}
+.aboutme h3{
+    padding-bottom:20px;
+    color:#504D4D;
+    font-size: 15px;
+    font-weight: 300;
+}
+.aboutme ul,li{
+    padding-bottom:10px;
+    color:#504D4D;
+    font-size: 15px;
+    font-weight: 300;
+}
+#page3{
+    background:#e9f0f5; 
+    margin:0;
+    padding:0 100px;
+    color:black;
+}
+#page3{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.titlepage3{
+    font-size:18px;
+    padding-bottom: 25px;
+    padding-top:35px;
+}
+.content{
+    border:solid 1px lightgray;
+    padding: 10px 100px 10px 100px;
+    margin-bottom: 30px;
+    border-radius:2px;
+    box-shadow:0px 0px 20px gray;
+}
+.content:hover{
+    background:#26E07F;
+    color:#0E1612;
+    transition: 0.4s ease-in-out;
+    box-shadow: none;
+    border:solid 1px lightgray;
+}
+.content h5,h3,p{
+    text-align: center;
+}
+.content h5,p{
+    font-size:13px;
+}
+.content{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.content h3,h5,p{
+    padding-bottom: 10px;
+}
+.timeline{
+    justify-content: center;
+}
+.skillstitle h1{
+    justify-content: center;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding:10px;
+    grid-column-gap: 20px;
+    grid-row-gap:20px;
+    padding-bottom: 30px;
+}
+.c,.java,.dsp,.photography,.editing,.html{
+    border:1px solid lightgray;
+    border-radius: 3px;
+    text-align: center;
+    padding:20px;
+}
+.grid img{
+    width:50px;
+    height:50px;
+    padding-bottom: 10px;
+}
+.grid p{
+    font-size:10px;
+    color:#504D4D;
+}
+.grid h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+.grid div:hover{
+    box-shadow:0 0 20px lightgray;
+    transition:0.4s ease-in-out;
+    border:solid 1px transparent;
+}
+.titlepage4{
+    font-weight:bold;
+    text-align: center;
+    padding-top:30px;
+    background:#e9f0f5;
+}
+.titlepage4 h1{
+    font-weight:bolder;
+    padding-top:10px;  
+    font-size: 25px; 
+}
+.ape{
+    display:flex;
+    flex-direction: row;
+    font-size:10px;
+    justify-content: center;
+}
+#page5{
+    background:#e9f0f5; 
+    margin:0;
+    padding:0 100px;
+}
+.ape img{
+    width:50px;
+    height:50px;
+    padding-bottom: 10px;   
+}
+.ape a{
+    color: black;
+}
+.ape div{
+    padding:10px 40px 50px 40px;
+}
+.socialmedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.facebook,.instagram,.twitter,.snapchat,.whatsapp,.linkedin{ 
+    padding-right:50px;
+    padding-bottom:100px; 
+}
+.titlepage4 h1{
+    padding-bottom:50px;
+}
