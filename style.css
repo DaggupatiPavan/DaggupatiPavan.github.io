@@ -1,244 +1,326 @@
-*{
-    margin:0 0 0 0;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
 }
-html{
-    scroll-behavior:smooth;
-}
-.header{
-height:50px;
-border:solid 1px transparent;
-padding:10px 80px 10px 40px;
-display: flex;
-flex-direction: row;
-max-width: auto;
-justify-content: space-between;
-font-weight: bold;
-}
-.left img{
-    width:100px;
-    height: 75px;
-    padding-left: 100px;
-    margin-right:50px;
-}
-.right {
-    padding-top:20px;
-}
-a{
-    padding-right: 10px;
-    text-decoration: none;
-    color: white;
-    font-weight: bolder;
-    
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
-a:hover{
-    color:#25EB41;
-    transition: 0.2s ease-in;
-}
-.middle{
-    border:solid 1px transparent;   
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    align-items: center;
-    position:relative;
-    top:100px;
-    color: white; 
-    padding-bottom: 200px;
-}
-.middle .name1,.name2,.name3,.button1{
-    padding: 5px;
-}
-.middle .name1{
-    font-size:40px;
-    font-weight:bolder;    
-}
-.middle .name2,.name3{
-    font-size:20px;
-    font-weight:lighter;
-}
-.name2 span{
-    color: #25EB41;
-}
-.name3{
-    padding-bottom: 40px;
-}
-.button1{
-    border:2px solid #25EB41;
-    border-radius: 100px;
-    font-size:17px;
-    padding: 7px 30px; 
-    font-weight: bold; 
-    
-}
-.button1:hover{
-    background-color:#25EB41;
-    transition: 0.3s ease-in;
-    color: black;
-}   
-.backimg{
-background-image: url(https://1.bp.blogspot.com/-t-ey8beCtdo/YBp4gd8yOeI/AAAAAAAAMBw/_9fnMe7oYHEJIiQDENi5Nk8c_ZZdJNTnwCLcBGAsYHQ/s1916/background.jpg);
-}
-#page2{
+/* Header Styles */
+.header {
     display: flex;
-    flex-direction:row;
-    justify-content: space-around;
-    padding: 80px 80px 20px 80px;
-}
-.mypic{
-    width:350px;
-    height:400px;
-    margin:20px 20px;
-    padding-right:30px;
-}
-.aboutme h1{
-    padding-top:20px;
-    padding-bottom:15px;
-    font-size: 25px;
-}
-.aboutme h3{
-    padding-bottom:20px;
-    color:#504D4D;
-    font-size: 15px;
-    font-weight: 300;
-}
-.aboutme ul,li{
-    padding-bottom:10px;
-    color:#504D4D;
-    font-size: 15px;
-    font-weight: 300;
-}
-#page3{
-    background:#e9f0f5; 
-    margin:0;
-    padding:0 100px;
-    color:black;
-}
-#page3{
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
 }
-.titlepage3{
-    font-size:18px;
-    padding-bottom: 25px;
-    padding-top:35px;
+
+.header .left img {
+    height: 50px;
 }
-.content{
-    border:solid 1px lightgray;
-    padding: 10px 100px 10px 100px;
-    margin-bottom: 30px;
-    border-radius:2px;
-    box-shadow:0px 0px 20px gray;
-}
-.content:hover{
-    background:#26E07F;
-    color:#0E1612;
-    transition: 0.4s ease-in-out;
-    box-shadow: none;
-    border:solid 1px lightgray;
-}
-.content h5,h3,p{
-    text-align: center;
-}
-.content h5,p{
-    font-size:13px;
-}
-.content{
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-}
-.content h3,h5,p{
-    padding-bottom: 10px;
-}
-.timeline{
-    justify-content: center;
-}
-.skillstitle h1{
-    justify-content: center;
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 20px;
-}
-.grid{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding:10px;
-    grid-column-gap: 20px;
-    grid-row-gap:20px;
-    padding-bottom: 30px;
-}
-.c,.java,.dsp,.photography,.editing,.html{
-    border:1px solid lightgray;
-    border-radius: 3px;
-    text-align: center;
-    padding:20px;
-}
-.grid img{
-    width:50px;
-    height:50px;
-    padding-bottom: 10px;
-}
-.grid p{
-    font-size:10px;
-    color:#504D4D;
-}
-.grid h2{
-    font-size: 20px;
+
+.header .right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
-.grid div:hover{
-    box-shadow:0 0 20px lightgray;
-    transition:0.4s ease-in-out;
-    border:solid 1px transparent;
+
+.header .right a:hover {
+    color: #26e07f;
 }
-.titlepage4{
-    font-weight:bold;
-    text-align: center;
-    padding-top:30px;
-    background:#e9f0f5;
-}
-.titlepage4 h1{
-    font-weight:bolder;
-    padding-top:10px;  
-    font-size: 25px; 
-}
-.ape{
-    display:flex;
-    flex-direction: row;
-    font-size:10px;
-    justify-content: center;
-}
-#page5{
-    background:#e9f0f5; 
-    margin:0;
-    padding:0 100px;
-}
-.ape img{
-    width:50px;
-    height:50px;
-    padding-bottom: 10px;   
-}
-.ape a{
-    color: black;
-}
-.ape div{
-    padding:10px 40px 50px 40px;
-}
-.socialmedia{
+
+/* Hero Section */
+.backimg {
+    background: url('https://1.bp.blogspot.com/-BURCM_aF6js/YBy_SgHD23I/AAAAAAAAMCM/iN0g7avPpvMgPUJImBhGaM_wX-EW1Ha3wCLcBGAsYHQ/s517/logo.png') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: center;
 }
-.facebook,.instagram,.twitter,.snapchat,.whatsapp,.linkedin{ 
-    padding-right:50px;
-    padding-bottom:100px; 
+
+.backgroundcolor {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
-.titlepage4 h1{
-    padding-bottom:50px;
+
+.middle h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.middle .name2 span {
+    color: #26e07f;
+}
+
+.button1 {
+    background-color: #26e07f;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.button1:hover {
+    background-color: #1dbf6a;
+}
+
+/* About Section */
+#page2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+
+.mypic {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 5px solid #26e07f;
+    margin-bottom: 20px;
+}
+
+.aboutme {
+    max-width: 600px;
+}
+
+.aboutme h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.aboutme h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.aboutme ul {
+    list-style: none;
+}
+
+.aboutme ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Education Section */
+#page3 {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+}
+
+.titlepage3 h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.content h3 {
+    color: #26e07f;
+    margin-bottom: 10px;
+}
+
+.content h5 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.content p {
+    color: #777;
+}
+
+/* Skills Section */
+#page4 {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.skillstitle h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.grid .c,
+.grid .java,
+.grid .dsp,
+.grid .photography,
+.grid .editing,
+.grid .html {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.grid .c:hover,
+.grid .java:hover,
+.grid .dsp:hover,
+.grid .photography:hover,
+.grid .editing:hover,
+.grid .html:hover {
+    transform: translateY(-10px);
+}
+
+.grid img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.grid h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.grid p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Contact Section */
+#page5 {
+    padding: 50px 20px;
+    background-color: #26e07f;
+    color: #fff;
+}
+
+.titlepage4 h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.ape {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.ape div {
+    margin-bottom: 20px;
+}
+
+.ape h2 {
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+.ape a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.ape img {
+    width: 50px;
+}
+
+.socialmedia {
+    text-align: center;
+}
+
+.socialmedia a {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.socialmedia a:hover {
+    transform: scale(1.1);
+}
+
+.socialmedia img {
+    width: 40px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header .right {
+        margin-top: 10px;
+    }
+
+    .backimg {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .middle h1 {
+        font-size: 2rem;
+    }
+
+    .mypic {
+        width: 200px;
+        height: 200px;
+    }
+
+    .grid .c,
+    .grid .java,
+    .grid .dsp,
+    .grid .photography,
+    .grid .editing,
+    .grid .html {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .ape {
+        flex-direction: column;
+        align-items: center;
+    }
 }
